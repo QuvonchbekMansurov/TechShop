@@ -1,0 +1,761 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  z-index: 22;
+  position: fixed;
+  height: auto;
+  background-color: #FAC769;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: -160px;
+  transition: 1s;
+}
+
+nav::before {
+  background-color: #b37606;
+}
+
+.nav {
+  width: 90%;
+  height: auto;
+  margin: auto 5%;
+}
+
+.ul-1 {
+  transition: 1s;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  /* height: 0; */
+  /* overflow: hidden; */
+}
+
+.ul-1 li a {
+  line-height: 35px;
+  color: black;
+}
+
+.ul-1 li a:hover {
+  cursor: pointer;
+  color: #53514E;
+}
+
+.ul-1 .xxx {
+  width: 100%;
+  height: auto;
+}
+
+#xxx:nth-child(1) {
+  margin-top: 10px;
+  padding-left: 100%;
+}
+
+label {
+  cursor: pointer;
+}
+
+#manu1:checked ~ .ul-1 {
+  height: 500px;
+}
+
+#manu1:checked ~ nav {
+  margin-top: 0;
+  transition: 0.5s;
+}
+#manu1:checked ~ nav .ul-2 label {
+  color: #FAC769;
+}
+
+.ul-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#manu1 {
+  display: none;
+  transition: 1s;
+}
+
+#manu1:checked ~ .ul-2 label {
+  /* display: none; */
+  background-color: white;
+  color: aqua;
+}
+
+#manuch1 {
+  position: absolute;
+  display: block;
+}
+
+.ul-2 ul {
+  width: 95%;
+  /* overflow: hidden; */
+  height: 82px;
+  display: flex;
+  gap: 20px;
+  padding-left: 44%;
+  align-items: center;
+}
+
+.ul-2 ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid white;
+  width: 30px;
+  height: 30px;
+}
+
+.ul-2 ul li a {
+  color: white;
+}
+
+.ul-2 .a11 h5 p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 40px;
+  background-color: white;
+  color: black;
+  border-radius: 55px;
+  font-size: 13px;
+  transition: 900s;
+}
+
+.a11 {
+  margin-right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 40px;
+  /* background-color: red; */
+  border: 1px solid #fafafa;
+  border-radius: 55px;
+  transition: 1.5s;
+  -webkit-animation-duration: inherit;
+          animation-duration: inherit;
+  -webkit-animation-direction: initial;
+          animation-direction: initial;
+}
+
+.ul-2 .a11 h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 40px;
+  /* background-color: red; */
+  border: 2px solid #ffffff;
+  border-radius: 55px;
+  transition: 0.1s;
+  -webkit-animation-duration: inherit;
+          animation-duration: inherit;
+  -webkit-animation-direction: initial;
+          animation-direction: initial;
+}
+
+#web {
+  display: none;
+}
+
+.web-ul {
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+#web:checked ~ .web-ul {
+  /* transition: 5s; */
+  height: 500px;
+}
+
+#more {
+  display: none;
+}
+
+#more:checked ~ .more-ul {
+  transition: 1s;
+  height: 500px;
+}
+
+.more-ul {
+  transition: 1s;
+  height: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 1100px) {
+  .ul-2 ul {
+    padding-left: 40%;
+  }
+}
+@media (max-width: 700px) {
+  .ul-2 ul {
+    padding-left: 33%;
+    padding-right: 20px;
+  }
+}
+.tana1 {
+  width: 100%;
+  height: 100vh;
+  background: url(./rasmlar/header_img.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  padding-left: 5%;
+}
+
+.tana1 p {
+  width: 33%;
+  height: auto;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.tana1 h1 {
+  width: 33%;
+  height: auto;
+  font-size: 52px;
+  font-weight: 900;
+}
+
+.tana1 .a11 h5 p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 160px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  border-radius: 55px;
+  font-size: 14px;
+  transition: 900s;
+}
+
+.tana1 .a11 h5 p:hover {
+  color: red;
+  background-color: rgba(0, 0, 0, 0.5960784314);
+}
+
+.tana1 .a11 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 160px;
+  height: 50px;
+  border: 1px solid #fafafa;
+  border-radius: 55px;
+  transition: 1.5s;
+}
+
+.tana1 .a11 h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 160px;
+  height: 50px;
+  border: 2px solid #ffffff;
+  border-radius: 55px;
+  transition: 0.1s;
+}
+
+@media (max-width: 770px) {
+  .tana1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .tana1 h1 {
+    width: auto;
+  }
+  .tana1 p {
+    width: auto;
+  }
+}
+/* ---------------------------- */
+.tana2 {
+  width: 100%;
+  height: auto;
+  padding: 100px 10% 100px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tana2 h1 {
+  width: 100%;
+  height: auto;
+  font-size: 32px;
+}
+
+.tana2 p {
+  width: 100%;
+  height: auto;
+  font-size: 16px;
+}
+
+/* ------------------------------- */
+.tana3 {
+  width: 100%;
+  height: auto;
+  padding: 50px 10%;
+  background-color: #FAC769;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.tana3 h1 {
+  width: 100%;
+  height: auto;
+  color: white;
+  font-size: 42px;
+}
+
+/* -------------------------------- */
+.tana4 {
+  width: 100%;
+  height: auto;
+  padding: 5% 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tana4 h1 {
+  width: 100%;
+  height: 55px;
+  padding: 0;
+}
+
+.tana4-kart {
+  background-color: #FAC769;
+  width: 29%;
+  height: 456px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: -1;
+}
+
+.tana4-kart h1 {
+  width: 90%;
+  height: 16px;
+  font-size: 16px;
+  margin: auto 5%;
+}
+
+.tana4-kart p {
+  width: 90%;
+  height: auto;
+  font-size: 16px;
+  color: #ffffff;
+  margin: auto 5%;
+}
+
+.tana4-kart .hea {
+  position: absolute;
+  font-size: 13px;
+  width: 105px;
+  height: 40px;
+  background: #FAC769;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 55px;
+}
+
+@media (max-width: 770px) {
+  .tana4 {
+    gap: 20px;
+  }
+  .tana4 h1 {
+    text-align: center;
+  }
+  .tana4-kart {
+    width: 90%;
+    margin: auto 5%;
+    padding-bottom: 3%;
+    height: auto;
+    gap: 10px;
+  }
+}
+/* --------------------- */
+.tana5 {
+  width: 100%;
+  height: auto;
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.tana5 h1 {
+  width: 100%;
+  font-size: 32px;
+  margin: 8px 0 24px 0;
+}
+
+.tana5-kart {
+  width: 23%;
+  background-color: #FAC769;
+  height: 174px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.plus {
+  width: 60px;
+  height: 60px;
+  border-radius: 55px;
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.qora {
+  z-index: -1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.619);
+}
+
+.qora h2 {
+  font-size: 22px;
+  position: absolute;
+  left: 10px;
+  bottom: 15px;
+  color: white;
+}
+
+.tana5-kart:hover .qora {
+  z-index: 1;
+}
+
+@media (max-width: 770px) {
+  .tana5 {
+    justify-content: center;
+  }
+  .tana5 h1 {
+    text-align: center;
+  }
+  .tana5-kart {
+    width: 45%;
+    height: 159px;
+  }
+}
+#r1 {
+  background: url(./vscode/malte-wingen-381988-1920x1280-800x533.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#r2 {
+  background: url(./vscode/malte-wingen-382148-1920x1280-800x533.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#r3 {
+  background: url(./vscode/gallery02.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#r4 {
+  background: url(./vscode/gallery00-384x256.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#r5 {
+  background: url(./vscode/gallery02.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#r6 {
+  background: url(./vscode/malte-wingen-382148-1920x1280-800x533.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#r7 {
+  background: url(./vscode/malte-wingen-382148-1920x1280-800x533.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#r8 {
+  background: url(./vscode/malte-wingen-381988-1920x1280-800x533.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* ------------------------------- */
+.learn .a11 h5 p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 45px;
+  background-color: white;
+  color: black;
+  border-radius: 55px;
+  font-size: 13px;
+  transition: 900s;
+}
+
+.learn .a11 {
+  margin-right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 45px;
+  /* background-color: red; */
+  border: 1px solid #fafafa;
+  border-radius: 55px;
+  transition: 1.5s;
+}
+
+.learn .a11 h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 45px;
+  /* background-color: red; */
+  border: 2px solid #ffffff;
+  border-radius: 55px;
+  transition: 0.1s;
+}
+
+.learn .a11:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s;
+  width: 130px;
+  height: 65px;
+}
+
+.learn .a11 h5:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1.5s;
+  width: 195px;
+  height: 65px;
+}
+
+.tana6 {
+  width: 100%;
+  height: auto;
+  padding: 50px 15%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #FAC769;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tana6-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tana6-text p {
+  width: auto;
+  height: auto;
+  color: white;
+  font-size: 16px;
+}
+
+.tana6-text h1 {
+  font-size: 32px;
+  color: white;
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 770px) {
+  .tana6 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tana6-text {
+    display: flex;
+    text-align: center;
+  }
+}
+/* ------------------------------- */
+.tana7 {
+  width: 100%;
+  height: auto;
+  padding: 50px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tana7 h1 {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  font-size: 32px;
+  margin-bottom: 10px;
+  z-index: 3;
+}
+
+.tana7-kart h1 {
+  z-index: 3;
+  position: relative;
+  font-size: 16px;
+  height: 16px;
+  display: flex;
+  padding: 25px 0 18px 0;
+}
+
+.tana7-kart .raqam {
+  position: absolute;
+  left: 10;
+  display: flex;
+  font-size: 60px;
+  width: auto;
+  height: auto;
+  color: #FAC769;
+  z-index: 1;
+}
+
+.tana7-kart {
+  width: 22%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.tana7-kart a {
+  color: #FAC769;
+}
+
+.tana7-kart a:hover {
+  color: #b37606;
+}
+
+@media (max-width: 990px) {
+  .tana7 {
+    flex-wrap: wrap;
+  }
+  .tana7-kart {
+    width: 45%;
+  }
+}
+@media (max-width: 770px) {
+  .tana7 {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .tana7-kart {
+    text-align: center;
+    width: 100%;
+    padding: 0 10%;
+  }
+  .tana7-kart h1 {
+    justify-content: center;
+  }
+  .tana7-kart .raqam {
+    margin-left: 32%;
+  }
+}
+/* --------------------- */
+.xarita {
+  width: 100%;
+  height: auto;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.xarita h2 {
+  font-size: 16px;
+  color: #767676;
+}
+
+.xarita h1 {
+  font-size: 32px;
+  color: black;
+}
+
+/* ------------------- */
+.ohiri {
+  width: 100%;
+  height: auto;
+  padding: 50px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ohiri ul {
+  display: flex;
+  gap: 20px;
+}
+
+.ohiri ul li a {
+  color: #FAC769;
+}
+
+@media (max-width: 1000px) {
+  .ohiri {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=inner.css.map */
